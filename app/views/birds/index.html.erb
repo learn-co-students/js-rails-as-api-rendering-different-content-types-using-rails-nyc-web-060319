@@ -1,7 +1,1 @@
-<h1>Birds</h1>
-
-<ul>
-<% @birds.each do |bird| %>
-    <li><%= bird.name %> - <%= bird.species %></li>
-<% end %>
-</ul>
+fetch('http://localhost:3000/birds').then(response => response.text()).then(text => console.log(text))
